@@ -1,13 +1,14 @@
 FROM node:12.4-alpine
 
-RUN mkdir /app
 WORKDIR /app
 
-COPY package.json package.json
-RUN npm install && mv node_modules /node_modules
+COPY package.json /app/
+RUN npm install
 
-COPY . .
+COPY app.js /app/
+COPY public /app/
 
-LABEL maintainer="Austin Loveless"
+LABEL creator="Austin Loveless"
+LABEL maintainer="Michael Act"
 
 CMD node app.js
