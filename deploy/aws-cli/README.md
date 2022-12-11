@@ -5,6 +5,10 @@
 2. [jq](https://stedolan.github.io/jq/download/)
 3. [tee](https://www.linuxquestions.org/questions/linux-software-2/wanna-install-tee-command-4175517168/)
 
+## Configure AWS Profile
+1. Generate [AWS Access Key and Secret Key via AWS Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)
+2. Run `aws configure --profile exploration`
+
 ## Step by Step
 1. Run `./01_create_ecs_cluster.sh`
 2. Run `./02_create_role.sh`
