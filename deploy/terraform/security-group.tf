@@ -7,7 +7,7 @@ module "security_group" {
   vpc_id      = module.vpc.vpc_id
 
   ingress_cidr_blocks = ["${var.your_ip_address}/32"]
-  ingress_rules       = ["http-8080-tcp"]
+  ingress_rules       = ["http-80-tcp"]
 
   tags = {
     Environment = "test"
