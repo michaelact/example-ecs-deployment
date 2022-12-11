@@ -2,7 +2,7 @@ module "ecs_cluster" {
   source  = "terraform-aws-modules/ecs/aws"
   version = "4.1.1"
 
-  cluster_name = "vpc-container-fargate"
+  cluster_name = "ecs-container-fargate"
 
   fargate_capacity_providers = {
     FARGATE = {
