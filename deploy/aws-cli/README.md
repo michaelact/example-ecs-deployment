@@ -5,7 +5,7 @@
 2. [jq](https://stedolan.github.io/jq/download/)
 3. [tee](https://www.linuxquestions.org/questions/linux-software-2/wanna-install-tee-command-4175517168/)
 
-# Step by Step
+## Step by Step
 1. Run `./01_create_ecs_cluster.sh`
 2. Run `./02_create_role.sh`
 3. Run `./03_attach_role_policy.sh`
