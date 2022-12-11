@@ -1,0 +1,23 @@
+{
+    "family": "container-nodejs-on-fargate",
+    "networkMode": "awsvpc",
+    "executionRoleArn": "arn:aws:iam::REPLACEME_AWS_ACCOUNT_ID:role/ecsTaskExecutionRole",
+    "containerDefinitions": [
+        {
+            "name": "container-nodejs-on-fargate",
+            "image": "michaelact/container-nodejs-on-fargate:latest",
+            "portMappings": [
+                {
+                    "containerPort": 8080,
+                    "hostPort": 8080,
+                    "protocol": "tcp"
+                }
+            ]
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512"
+}
