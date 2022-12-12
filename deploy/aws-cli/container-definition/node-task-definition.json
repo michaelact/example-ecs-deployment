@@ -5,7 +5,7 @@
     "containerDefinitions": [
         {
             "name": "container-nodejs-on-fargate",
-            "image": "michaelact/container-nodejs-on-fargate:latest",
+            "image": "REPLACEME_AWS_ACCOUNT_ID.dkr.ecr.us-east-2.amazonaws.com/container-on-aws/nodejs:latest",
             "portMappings": [
                 {
                     "containerPort": 8080,
