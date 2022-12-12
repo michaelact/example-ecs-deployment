@@ -1,0 +1,8 @@
+version: "3"
+
+# https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-compose-parameters.html
+services:
+  container-nodejs-on-fargate:
+    image: michaelact/container-nodejs-on-fargate:latest
+    ports:
+      - "80:80"

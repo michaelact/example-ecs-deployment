@@ -1,0 +1,25 @@
+version: 1
+
+# https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-compose-ecsparams.html
+task_definition:
+  ecs_network_mode: awsvpc
+  os_family: Linux
+  task_execution_role: ecsTaskExecutionRole
+  task_size:
+    cpu_limit: 256
+    mem_limit: 512
+  services:
+    container-nodejs-on-fargate:
+      mem_limit: 512
+      mem_reservation: 256
+
+
+run_params:
+  network_configuration:
+    awsvpc_configuration:
+      subnets: 
+        - "subnet-0d1db093f8f2e089a"
+        - "subnet-0fdefeb61c5c4b84c"
+      security_groups:
+        - "sg-0d599cf4d056ca27d"
+      assign_public_ip: ENABLED
