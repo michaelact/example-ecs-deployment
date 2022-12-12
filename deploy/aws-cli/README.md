@@ -10,21 +10,22 @@
 2. Run `aws configure --profile exploration`
 
 ## Step by Step
-1. Run `./01_create_ecs_cluster.sh`
-2. Run `./02_create_role.sh`
-3. Run `./03_attach_role_policy.sh`
-4. Run `./04_create_task_definition.sh AWS_ACCOUNT_ID`
+1. Run `./00_create_ecr_repository.sh AWS_ACCOUNT_ID`
+2. Run `./01_create_ecs_cluster.sh`
+3. Run `./02_create_role.sh`
+4. Run `./03_attach_role_policy.sh`
+5. Run `./04_create_task_definition.sh AWS_ACCOUNT_ID`
    Replace `AWS_ACCOUNT_ID` with the AWS Account ID we use to provision the ECS Infrastructure
-5. Run `./05_create_security_group.sh`
-6. Run `./06_create_security_group_rule.sh YOUR_PUBLIC_IP`
+6. Run `./05_create_security_group.sh`
+7. Run `./06_create_security_group_rule.sh YOUR_PUBLIC_IP`
    Replace `YOUR_PUBLIC_IP` with the Public IP which we will later use to access the ECS Fargate service.
-7. Filling out the SUBNETS variable on `./07_create_ecs_service.sh` file
+8. Filling out the SUBNETS variable on `./07_create_ecs_service.sh` file
    1. Open [VPC Console Dashboard](https://us-east-2.console.aws.amazon.com/vpc/home?region=us-east-2#vpcs:)
    2. Copy VPC ID that we want to use to put the ECS Service
    3. In the left bar, click `Subnets`
    4. Paste the VPC ID into the Search bar containing the words `Filter subnets`
    5. Put the subnet ID on `07_create_ecs_service.sh` file
-8. Run `./07_create_ecs_service.sh`
+9. Run `./07_create_ecs_service.sh`
 
 ## Check Fargate Service Public IP
 1. Open [AWS ECS Cluster Console](https://us-east-2.console.aws.amazon.com/ecs/home?region=us-east-2#/clusters)
