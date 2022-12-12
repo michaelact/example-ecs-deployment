@@ -35,7 +35,7 @@ $ terraform init
 4. Click `Tasks` bar
 5. Click on one of the task ID that is in the `Running` state
 6. Find `Public IP`
-7. Type in your browser following this format: `http://PUBLIC_IP:8080/`
+7. Type in your browser following this format: `http://PUBLIC_IP:80/`
 
 ## Destroying Resources
 1. Run `terraform destroy`
