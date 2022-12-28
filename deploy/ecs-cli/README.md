@@ -2,6 +2,7 @@
 
 ## Requirements
 1. [ECS-CLI](https://github.com/aws/amazon-ecs-cli#installing): 1.21.0
+2. [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli): 1.3.0
 
 ## Spawn the Infrastructure
 1. Navigate to `/path/to/example-ecs-deployment/deploy/ecs-cli/terraform/` folder
