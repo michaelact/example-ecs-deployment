@@ -21,4 +21,6 @@
    - [ECS-CLI](./deploy/ecs-cli/)
    - [AWS-CLI](./deploy/aws-cli/)
    - [Terraform](./deploy/terraform/)
+   - [AWS-Copilot](./deploy/aws-copilot/) (Doesn't fit the use case)
+   - [Compose-CLI](./deploy/compose-cli/) (Doesn't fit the use case)
 2. Follow the instruction there
