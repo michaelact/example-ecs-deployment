@@ -4,25 +4,6 @@
 1. [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli): 1.3.0
 2. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html): 2.4.7
 
-## Configure AWS Profile
-You may get this error when run `terraform init`.
-
-```
-$ terraform init
-
-╷
-│ Error: error configuring Terraform AWS Provider: failed to get shared config profile, exploration
-│
-│   with provider["registry.terraform.io/hashicorp/aws"],
-│   on backend-terraform.tf line 9, in provider "aws":
-│    9: provider "aws" {
-│
-╵
-```
-
-1. Generate [AWS Access Key and Secret Key via AWS Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)
-2. Run `aws configure --profile exploration`
-
 ## Spawn Resources
 1. Run `terraform init`: Download terraform modules
 2. Run `terraform plan`: Check what resources will be provisioned
@@ -39,3 +20,10 @@ $ terraform init
 
 ## Destroying Resources
 1. Run `terraform destroy`
+
+## Links and References
+- https://github.com/cloudposse/terraform-aws-ecs-alb-service-task
+- https://registry.terraform.io/modules/terraform-aws-modules/cloudwatch/aws
+- https://registry.terraform.io/modules/terraform-aws-modules/ecs/aws
+- https://registry.terraform.io/modules/terraform-aws-modules/security-group/aws
+- https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws

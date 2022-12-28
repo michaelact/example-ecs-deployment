@@ -3,10 +3,6 @@
 ## Requirements
 1. [ECS-CLI](https://github.com/aws/amazon-ecs-cli#installing): 1.21.0
 
-## Configure AWS Profile
-1. Generate [AWS Access Key and Secret Key via AWS Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)
-2. Run `aws configure --profile exploration`
-
 ## Spawn the Infrastructure
 1. Navigate to `/path/to/example-ecs-deployment/deploy/ecs-cli/terraform/` folder
 2. Follow the instruction
@@ -25,3 +21,8 @@
 5. Click on one of the task ID that is in the `Running` state
 6. Find `Public IP`
 7. Type in your browser following this format: `http://PUBLIC_IP:80/`
+
+## Links and References
+- https://github.com/aws/amazon-ecs-cli
+- https://web.archive.org/web/20220517091612/https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-compose-ecsparams.html
+- https://web.archive.org/web/20220517091612/https://docs.aws.amazon.com/AmazonECS/latest/developerguide/cmd-ecs-cli-compose-parameters.html

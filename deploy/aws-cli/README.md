@@ -5,10 +5,6 @@
 2. [jq](https://stedolan.github.io/jq/download/)
 3. [tee](https://www.linuxquestions.org/questions/linux-software-2/wanna-install-tee-command-4175517168/)
 
-## Configure AWS Profile
-1. Generate [AWS Access Key and Secret Key via AWS Console](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_access-keys.html#Using_CreateAccessKey)
-2. Run `aws configure --profile exploration`
-
 ## Step by Step
 1. Run `./00_create_ecr_repository.sh AWS_ACCOUNT_ID`
 2. Run `./01_create_ecs_cluster.sh`
@@ -35,3 +31,8 @@
 5. Click on one of the task ID that is in the `Running` state
 6. Find `Public IP`
 7. Type in your browser following this format: `http://PUBLIC_IP:80/`
+
+## Links and References
+- https://awscli.amazonaws.com/v2/documentation/api/latest/reference/index.html
+- https://medium.com/@sunnykay/deployment-pipeline-deploy-app-to-aws-ecs-using-aws-cli-13919ab7a097
+- https://levelup.gitconnected.com/aws-fargate-running-a-serverless-node-js-app-on-aws-ecs-c5d8dea0a85a
