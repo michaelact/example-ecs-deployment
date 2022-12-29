@@ -23,4 +23,5 @@
    - [Terraform](./deploy/terraform/)
    - [AWS-Copilot](./deploy/aws-copilot/) (Doesn't fit the use case)
    - [Compose-CLI](./deploy/compose-cli/) (Doesn't fit the use case)
+   - [AWS-CodeDeploy](./deploy/aws-codedeploy/) (Not a clean structure) \[WIP\]
 2. Follow the instruction there

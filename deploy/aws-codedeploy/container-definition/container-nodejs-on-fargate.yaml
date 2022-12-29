@@ -1,0 +1,20 @@
+- command: []
+  image: "michaelact/container-nodejs-on-fargate:latest"
+  logConfiguration:
+    logDriver: "awslogs"
+    options:
+      awslogs-group: cloudwatch-container-nodejs-on-fargate
+      awslogs-region: us-east-2
+      awslogs-stream-prefix: log-nodejs
+  cpu: 256
+  memory: 512
+  memoryReservation: 256
+  mountPoints: []
+  name: container-nodejs-on-fargate
+  portMappings: 
+  - containerPort: 80
+    hostPort: 80
+    protocol: tcp
+  readonlyRootFilesystem: false
+  ulimits: []
+  volumesFrom: []
