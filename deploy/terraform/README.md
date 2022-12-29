@@ -4,7 +4,7 @@
 1. [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli): 1.3.0
 2. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html): 2.4.7
 
-## Spawn Resources
+## Spawn the Infrastructure
 1. Run `terraform init`: Download terraform modules
 2. Run `terraform plan`: Check what resources will be provisioned
 3. Run `terraform apply`: Provision the infrastructure!
