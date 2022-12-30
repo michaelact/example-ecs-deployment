@@ -30,11 +30,11 @@
 
 |                 | **AWS Code Deploy** | **Terraform**    | **ECS-CLI**  |
 |-----------------|---------------------|------------------|--------------|
-| **Bahasa**      | YAML/JSON           | Terraform (*.tf) | YAML         |
-| **Komunitas**   | Luas                | Luas             | Kecil        |
-| **Popularitas** | Tidak diketahui     | 35.6k Bintang    | 1.7k Bintang |
-| **Biaya**       | Gratis              | Gratis           | Gratis       |
-| **Kemudahan**   | Mudah               | Sedang           | Mudah        |
+| **Language**    | YAML/JSON           | Terraform (*.tf) | YAML         |
+| **Community**   | Large               | Large            | Small        |
+| **Popularity**  | Popular             | 35.6k Stars      | 1.7k Stars   |
+| **Pricing**     | Free                | Free             | Free         |
+| **Difficult**   | Easy                | Medium           | Easy         |
 
 This data was taken on December 29, 2022.
 
