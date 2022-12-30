@@ -38,6 +38,6 @@
 
 This data was taken on December 29, 2022.
 
-- Terraform: Able to create all types of resources from AWS Cloud with definitive files. However, it is continuously unable to read events outside of the terraform, such as autoscaling.
-- ECS-CLI: Suitable for integration with CI/CD pipelines. The deployment process will be similar to common deployment design using docker compose.
-- AWS Code Deploy: Suitable for integration with CI/CD pipelines. However, the structure exemplified in the GitHub repository above still has some weaknesses. Therefore, further exploration is needed to find a cleaner and more mature structure.
+**Using ECS-CLI and Terraform**
+- ECS-CLI is used as a Continuous Deployment tool to create and run containers on top of ECS Clusters.
+- Terraform is used as a provisioning tool for static resources. Such as Virtual Private Cloud (VPC), Relational Database Service (RDS), Elastic Compute Cloud (EC2), Elastic Container Service (ECS) Cluster, and others.
