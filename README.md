@@ -25,3 +25,19 @@
    - [Compose-CLI](./deploy/compose-cli/) (Doesn't fit the use case)
    - [AWS-CodeDeploy](./deploy/aws-codedeploy/) (Not a clean structure) \[WIP\]
 2. Follow the instruction there
+
+## Deployment Tools Recommendation
+
+|                 | **AWS Code Deploy** | **Terraform**    | **ECS-CLI**  |
+|-----------------|---------------------|------------------|--------------|
+| **Bahasa**      | YAML/JSON           | Terraform (*.tf) | YAML         |
+| **Komunitas**   | Luas                | Luas             | Kecil        |
+| **Popularitas** | Tidak diketahui     | 35.6k Bintang    | 1.7k Bintang |
+| **Biaya**       | Gratis              | Gratis           | Gratis       |
+| **Kemudahan**   | Mudah               | Sedang           | Mudah        |
+
+This data was taken on December 29, 2022.
+
+- Terraform: Able to create all types of resources from AWS Cloud with definitive files. However, it is continuously unable to read events outside of the terraform, such as autoscaling.
+- ECS-CLI: Suitable for integration with CI/CD pipelines. The deployment process will be similar to common deployment design using docker compose.
+- AWS Code Deploy: Suitable for integration with CI/CD pipelines. However, the structure exemplified in the GitHub repository above still has some weaknesses. Therefore, further exploration is needed to find a cleaner and more mature structure.
