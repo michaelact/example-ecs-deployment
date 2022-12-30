@@ -34,3 +34,11 @@ Note:
 - https://registry.terraform.io/modules/terraform-aws-modules/vpc/aws
 - https://registry.terraform.io/modules/cloudposse/code-deploy/aws/latest/examples/complete
 - https://registry.terraform.io/modules/cloudposse/ecs-alb-service-task/aws/latest/examples/complete
+- https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs-deployment.html
+
+## Drawback
+The [container-definition](./container-definition/) and [ecs-services.tf](./ecs-services.tf) file is used only used at first. Because if we make changes and re-execute `terraform apply`, it will show `Unable to update task definition on services with a CODE_DEPLOY deployment controller. Use AWS CodeDeploy to trigger a new deployment.`. 
+
+AWS Code Deploy requires us to save the deployment configuration in [appspec](./appspec) every time we make changes to ECS Services. Check the [Deployment New Changes](#deployment-new-changes) part.
+
+Do we have to create ECS Services and ECS Task Definitions through the GUI Console? Then, we can remove the file and use Code Deploy for the next updates. We had to find a way to store all the AWS resources in version control system.
