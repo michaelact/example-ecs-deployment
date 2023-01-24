@@ -18,9 +18,9 @@
 
 ## Deployment
 1. Choose what deployment tools do you want to try, currently available are:
+   - [Terraform](./deploy/terraform/)
    - [ECS-CLI](./deploy/ecs-cli/)
    - [AWS-CLI](./deploy/aws-cli/)
-   - [Terraform](./deploy/terraform/)
    - [AWS-Copilot](./deploy/aws-copilot/) (Doesn't fit the use case)
    - [Compose-CLI](./deploy/compose-cli/) (Doesn't fit the use case)
    - [AWS-CodeDeploy](./deploy/aws-codedeploy/) (Not a clean structure)
