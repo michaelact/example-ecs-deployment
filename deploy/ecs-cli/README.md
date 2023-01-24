@@ -4,14 +4,15 @@
 1. [ECS-CLI](https://github.com/aws/amazon-ecs-cli#installing): 1.21.0
 2. [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli): 1.3.0
 
-## Spawn the Infrastructure
+## Spawn the Infrastructure using `terraform`
 1. Navigate to `/path/to/example-ecs-deployment/deploy/ecs-cli/terraform/` folder
-2. Follow the instruction
-3. Save on your note the `public_subnets` and `security_group_id` after `terraform apply` variable
+2. Follow the instruction there
 
 ## Deploy using `ecs-cli`
+
+The Amazon ECS Command Line Interface (CLI) is a command line tool for Amazon Elastic Container Service (Amazon ECS) that provides high-level commands to simplify creating, updating, and monitoring clusters and tasks from a local development environment.
+
 1. Create the environment variables on `container-nodejs-on-fargate/.env` file
-2. Edit `container-nodejs-on-fargate/ecs-params.yml` on `subnets` and `security_groups` sections according to the values you got when you spawned the infrastructure
 3. Run `./ecs-deploy.sh container-nodejs-on-fargate`
 
 ## Check Fargate Service Public IP

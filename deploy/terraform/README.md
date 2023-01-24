@@ -1,13 +1,15 @@
 # Deploy AWS ECS Fargate using Terraform
 
+Terraform is an infrastructure as code tool that lets you build, change, and version cloud resources safely and efficiently.
+
 ## Requirements
 1. [Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli): 1.3.0
 2. [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html): 2.4.7
 
 ## Spawn the Infrastructure
-1. Run `terraform init`: Download terraform modules
-2. Run `terraform plan`: Check what resources will be provisioned
-3. Run `terraform apply`: Provision the infrastructure!
+1. Download terraform modules: `terraform init`
+2. Check what resources will be provisioned: `terraform plan`
+3. Provision the infrastructure: `terraform apply`
 
 ## Check Fargate Service Public IP
 1. Open [AWS ECS Cluster Console](https://us-east-2.console.aws.amazon.com/ecs/home?region=us-east-2#/clusters)
